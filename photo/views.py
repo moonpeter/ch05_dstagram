@@ -34,3 +34,4 @@ class PhotoUpdateView(UpdateView):
     model = Photo
     fields = ['photo', 'text']
     template_name = 'photo/update.html'
+    success_url = '/'
