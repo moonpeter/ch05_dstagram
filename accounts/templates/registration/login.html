@@ -7,7 +7,7 @@
     <div class="col-md-8 panel panel-default">
         <div class="alert alert-info">Please enter your login informations.</div>
         <form action="" method="POST">
-            {{from.as_p}}
+            {{form.as_p}}
             {% csrf_token %}
             <input type="submit" class="btn btn-primary" value="Login">
         </form>
