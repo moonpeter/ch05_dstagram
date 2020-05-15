@@ -28,6 +28,31 @@ bcrypt = ["bcrypt"]
 
 [[package]]
 category = "main"
+description = "Export comments and integrate DISQUS into your Django website"
+name = "django-disqus"
+optional = false
+python-versions = "*"
+version = "0.5"
+
+[package.dependencies]
+Django = ">=1.4"
+mock = ">=1.0.1"
+
+[[package]]
+category = "main"
+description = "Rolling backport of unittest.mock for all Pythons"
+name = "mock"
+optional = false
+python-versions = ">=3.6"
+version = "4.0.2"
+
+[package.extras]
+build = ["twine", "wheel", "blurb"]
+docs = ["sphinx"]
+test = ["pytest", "pytest-cov"]
+
+[[package]]
+category = "main"
 description = "Python Imaging Library (Fork)"
 name = "pillow"
 optional = false
@@ -51,7 +76,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "0.3.1"
 
 [metadata]
-content-hash = "8cc03baa998a2e37974f6355731fb04c89482d81521a55bace5e7bd83a3cb065"
+content-hash = "804fd7fe5a6dee90658b74daff605e6119e899708b42775aaf56698740a89bf5"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -62,6 +87,13 @@ asgiref = [
 django = [
     {file = "Django-3.0.6-py3-none-any.whl", hash = "sha256:051ba55d42daa3eeda3944a8e4df2bc96d4c62f94316dea217248a22563c3621"},
     {file = "Django-3.0.6.tar.gz", hash = "sha256:9aaa6a09678e1b8f0d98a948c56482eac3e3dd2ddbfb8de70a868135ef3b5e01"},
+]
+django-disqus = [
+    {file = "django-disqus-0.5.tar.gz", hash = "sha256:98b92ce05caea193cd6f797238fda1e918f31e0c77c533706372d7dbd0e9bb5e"},
+]
+mock = [
+    {file = "mock-4.0.2-py3-none-any.whl", hash = "sha256:3f9b2c0196c60d21838f307f5825a7b86b678cedc58ab9e50a8988187b4d81e0"},
+    {file = "mock-4.0.2.tar.gz", hash = "sha256:dd33eb70232b6118298d516bbcecd26704689c386594f0f3c4f13867b2c56f72"},
 ]
 pillow = [
     {file = "Pillow-7.1.2-cp35-cp35m-macosx_10_10_intel.whl", hash = "sha256:ae2b270f9a0b8822b98655cb3a59cdb1bd54a34807c6c56b76dd2e786c3b7db3"},
