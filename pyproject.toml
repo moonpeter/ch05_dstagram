@@ -6,9 +6,9 @@ authors = ["moonpeter <moonpeter@kakao.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-django = "^3.0.6"
 pillow = "^7.1.2"
 django-disqus = "^0.5"
+django = ">3.0"
 
 [tool.poetry.dev-dependencies]
 
